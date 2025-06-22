@@ -26,24 +26,42 @@ const ctx = getNetlifyContext();
 export default function Page() {
     return (
         <div className="flex flex-col gap-12 sm:gap-16">
-            <section>
+            {/* <section>
                 <ContextAlert className="mb-6" />
                 <h1 className="mb-4">Netlify Platform Starter - Next.js</h1>
                 <p className="mb-6 text-lg">Get started with Next.js and Netlify in seconds.</p>
                 <Link href="https://docs.netlify.com/frameworks/next-js/overview/" className="btn btn-lg sm:min-w-64">
                     Read the Docs
                 </Link>
-            </section>
-            {!!ctx && (
+            </section> */}
+            {/* {!!ctx && (
                 <section className="flex flex-col gap-4">
                     <Markdown content={contextExplainer} />
                     <RuntimeContextCard />
                 </section>
-            )}
-            <section className="flex flex-col gap-4">
+            )} */}
+            {/* <section className="flex flex-col gap-4">
                 <Markdown content={preDynamicContentExplainer} />
                 <RandomQuote />
                 <Markdown content={postDynamicContentExplainer} />
+            </section> */}
+            {/* Avocado Flavors Section */}
+            <section className="flex flex-col items-center mt-12">
+                <h2 className="text-2xl font-semibold text-green-400 drop-shadow-[0_1px_0_black] mb-6">Our Flavors</h2>
+                <div className="flex flex-row gap-8 justify-center">
+                    <div className="flex flex-col items-center">
+                        <img src="/images/classic-avocado.png" alt="Classic Avocado" className="w-24 h-24 object-cover rounded-full mb-2 border-2 border-green-300 shadow" />
+                        <span className="font-semibold text-green-400 drop-shadow-[0_1px_0_black]">Classic Avocado</span>
+                    </div>
+                    <div className="flex flex-col items-center">
+                        <img src="/images/spicy-jalapeno.png" alt="Spicy Jalapeño" className="w-24 h-24 object-cover rounded-full mb-2 border-2 border-green-300 shadow" />
+                        <span className="font-semibold text-green-400 drop-shadow-[0_1px_0_black]">Spicy Jalapeño</span>
+                    </div>
+                    <div className="flex flex-col items-center">
+                        <img src="/images/sweet-mango.png" alt="Sweet Mango" className="w-24 h-24 object-cover rounded-full mb-2 border-2 border-green-300 shadow" />
+                        <span className="font-semibold text-green-400 drop-shadow-[0_1px_0_black]">Sweet Mango</span>
+                    </div>
+                </div>
             </section>
         </div>
     );
